@@ -1,0 +1,51 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "3390b5cb5b9da6029643",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"ab7f5223c66397120dc8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":485.13853904282115,\"y\":0,\"z\":0,\"width\":795.264483627204,\"height\":340.05037783375315,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Avg(cotacoes.Cotacao)\"}],\"Category\":[{\"queryRef\":\"calendario.Data\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cotacoes\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"calendario\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cotacao\"}},\"Function\":1},\"Name\":\"Avg(cotacoes.Cotacao)\",\"NativeReferenceName\":\"Average of Cotacao\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Data\"},\"Name\":\"calendario.Data\",\"NativeReferenceName\":\"Data\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Data\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 340.05,
+          "width": 795.26,
+          "x": 485.14,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c689aeaf6a2003356800\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1,\"width\":193.14861460957178,\"height\":300.15113350125944,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"moedas.Moeda\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"moedas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Moeda\"},\"Name\":\"moedas.Moeda\",\"NativeReferenceName\":\"Moeda\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"moedas\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Moeda\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'USD'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 300.15,
+          "width": 193.15,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
