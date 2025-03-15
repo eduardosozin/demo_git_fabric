@@ -1,4 +1,4 @@
-expression base_transacoes = "C:\Users\cando\OneDrive\Projetos\demo_git_fabric\transacoes.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+expression base_transacoes = "C:\Users\cando\OneDrive\Projetos\transacoes.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: 4eaa2e43-7dc9-4423-bad9-ff04eaf8efc7
 	queryGroup: Parâmetros
 
